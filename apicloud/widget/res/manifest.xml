@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <application name="targetSdkVersion" value="28"/>
+    <uses-feature android:name="android.hardware.type.television" android:required="true"></uses-feature>
+    <receiver android:name=".LocationLoggerServiceManager" android:enabled="true" android:exported="false" android:label="LocationLoggerServiceManager">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

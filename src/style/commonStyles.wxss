@@ -1,0 +1,57 @@
+.color_black {
+  color: #333;
+}
+
+.color_gray_deep {
+  color: #666;
+}
+
+.color_gray {
+  color: #acacac;
+}
+
+.default_color {
+  color: #f97755;
+}
+
+.margin_top8 {
+  margin-top: 0.8rem;
+}
+
+.myLabel_color .van-icon-checked {
+  color: #f97755;
+}
+
+.no-more {
+  font-size: 1.3rem;
+  color: #acacac !important;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.infinite-status-prompt {
+  font-size: 1.3rem;
+  color: #acacac !important;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.ellipsis_3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.ellipsis_2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.ellipsis_1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

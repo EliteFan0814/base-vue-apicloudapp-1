@@ -1,0 +1,72 @@
+<widget id="A6162874920019" version="0.0.1">
+    <name>雾鲤</name>
+    <description>雾鲤</description>
+    <!-- <author email="developer@apicloud.com" href="http://www.apicloud.com">Developer</author> -->
+    <!-- <content src="html/winPageIndex.html"/> -->
+    <content src="http://192.168.0.118:83/winPageIndex.html"/>
+    <access origin="*"/>
+
+    <preference name="pageBounce" value="false"/>
+
+    <preference name="appBackground" value="rgba(0,0,0,1)"/>
+
+    <preference name="windowBackground" value="rgba(0,0,0,1)"/>
+
+    <preference name="frameBackgroundColor" value="rgba(0,0,0,1)"/>
+
+    <preference name="hScrollBarEnabled" value="false"/>
+
+    <preference name="vScrollBarEnabled" value="false"/>
+
+    <preference name="autoLaunch" value="true"/>
+
+    <preference name="fullScreen" value="false"/>
+
+    <preference name="autoUpdate" value="true"/>
+
+    <preference name="smartUpdate" value="false"/>
+
+    <preference name="debug" value="true"/>
+
+    <preference name="statusBarAppearance" value="true"/>
+
+    <permission name="readPhoneState"/>
+
+    <permission name="camera"/>
+
+    <permission name="record"/>
+
+    <permission name="location"/>
+
+    <permission name="fileSystem"/>
+
+    <permission name="internet"/>
+
+    <permission name="bootCompleted"/>
+
+    <permission name="hardware"/>
+
+    <!-- <preference name="useWKWebView" value="true" /> -->
+    <!-- 场景还原 -->
+    <!-- <preference name="urlScheme" value="mlink://" /> -->
+    <!-- <preference name="urlScheme" value="mlink"/> -->
+
+    <preference name="appCertificateVerify" value="false"/>
+    <preference name="checkSslTrusted" value="false"/>
+    <preference name="querySchemes" value="weixin,alipay,baidumap,iosamap"/>
+
+    <!-- <feature name="aMap">
+        <param name="android_api_key" value="87620c9caf7c1e2ab06cda4a4fdd66df"/>
+        <param name="ios_api_key" value="21f33f59c9f5dc531af2a293cb9acb57"/>
+    </feature> -->
+    <!-- <feature name="beecloud">
+        <param name="urlScheme" value="wx1099f07d9bf567b7" />
+        <param name="bcAppID" value="41d7957e-8f19-4b97-a8f5-da8d48f31781"/>
+        <param name="sandbox" value="false"/>
+    </feature> -->
+    <!-- <feature name="wx">
+      <param name="urlScheme" value="wx1099f07d9bf567b7"/>
+      <param name="apiKey" value="wx1099f07d9bf567b7"/>
+      <param name="apiSecret" value="a354f72aa1b4c2b8eaad137ac81434cd"/>
+    </feature> -->
+</widget>

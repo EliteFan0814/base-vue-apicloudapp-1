@@ -1,0 +1,152 @@
+@import './variables.scss';
+
+// 文字单行显示不折行，多余省略号显示
+%text_ellipsis {
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// 分割线
+%split_6 {
+  display: block;
+  background-color: $bgc_normal;
+  height: 6px;
+}
+
+%split_8 {
+  display: block;
+  background-color: $bgc_normal;
+  height: 8px;
+}
+
+%flex_row_base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;;
+}
+
+// 左图，中间主要信息，右边其他信息布局
+%item_info_flex_layout {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  .left_image {
+    margin-right: 0.8rem;
+    padding: 0.2rem;
+    border: 1px solid $light_green;
+    border-radius: 0.4rem;
+  }
+  .center_info {
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: calc(100% - 150px);
+  }
+  .right_info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+// 左图，右信息两列布局
+%two_column_layout {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  .left_img {
+    margin-right: 1rem;
+  }
+  .right_info {
+    height: 100%;
+    line-height: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.7rem;
+  }
+}
+
+// 列表总体样式
+%list_style {
+  padding: 0 2%;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin list_item($col_num: 2) {
+  width: (100% - 1 * $col_num) / $col_num;
+  padding: 10px 0;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  text-align: center;
+  overflow: hidden;
+  &:nth-child(#{$col_num}n) {
+    border-right: none;
+  }
+}
+
+// 商品带分割线布局
+%good_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// 单个商品布局， 上图，中间名称，下面价格
+@mixin good_item($col_num: 2) {
+  width: 100% / $col_num;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  &:nth-child(#{$col_num}n) {
+    border-right: none;
+  }
+  .item_img, .title, .price {
+    margin-bottom: 10px;
+    font-size: 0.92rem;
+  }
+  .price {
+    color: $orange;
+    font-size: 0.98rem;
+  }
+}
+
+// 带背景图的组件样式
+%bg_img_comtainer {
+  position: relative;
+  overflow: hidden;
+  .bg {
+    background-image: url('~@/static/image/bg1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(6px);
+  }
+}
+
+// 获取随机颜色
+@function getRandomColor($index) {
+  // $colorList: #80C269, #F19149, #F19EC2, #673AB7, #00BCD4, #8BC34A, #607D8B;
+  $randomColor: nth($colorList, ($index%length($colorList)));
+  @return $randomColor;
+}

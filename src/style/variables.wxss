@@ -1,0 +1,111 @@
+.color_black {
+  color: #333;
+}
+
+.color_gray_deep {
+  color: #666;
+}
+
+.color_gray {
+  color: #acacac;
+}
+
+.default_color {
+  color: #f97755;
+}
+
+.margin_top8 {
+  margin-top: 0.8rem;
+}
+
+.myLabel_color .van-icon-checked {
+  color: #f97755;
+}
+
+.no-more {
+  font-size: 1.3rem;
+  color: #acacac !important;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.infinite-status-prompt {
+  font-size: 1.3rem;
+  color: #acacac !important;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.ellipsis_3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.ellipsis_2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.ellipsis_1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container {
+  padding: 0 1.5rem;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teacher-img {
+  position: relative;
+}
+
+.teacher-img:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../static/image/icon/tea.png") no-repeat;
+  background-size: 100%;
+}
+
+.student-img {
+  position: relative;
+}
+
+.student-img:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../static/image/icon/stud.png") no-repeat;
+  background-size: 100%;
+}
+
+.whiteBg {
+  margin-top: 3rem;
+}

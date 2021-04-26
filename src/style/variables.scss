@@ -1,0 +1,153 @@
+// 主题颜色变量
+$orange: #f47700; // 橙色
+$light_green: #8ac431; // 浅绿
+$normal_green: #24b24e; // 绿色
+$dark_green: #1e9342; // 深绿
+$yellow: #fcd54a; // 黄色
+
+// 文字颜色变量
+$text_dark: #333; // 黑色
+$text_deepdark: #262626; // 黑色
+$text_lightdark: rgb(73, 73, 73);
+$text_normal: #666; //	正常
+$text_light: #999; // 灰
+$text_lighter: rgb(194, 194, 194);
+$text_gray: #acacac; // 字体颜色
+$text_darklight: #474747; // 字体颜色
+$price_color: #f97755; // 价格颜色
+
+// 背景色
+$bgc_normal: #f7f7f7; //hover背景色
+
+// 边框色
+$border_color: #dcdcdc;
+
+// 其他颜色
+$blue: #829ab6; // 蓝色
+
+// 颜色表
+$colorList: #80C269, #F19149, #F19EC2 , #673AB7, #00BCD4, #8BC34A, #607D8B;
+
+// 字体大小表
+$font_size_10: 10px;
+$font_size_11: 11px;
+$font_size_12: 12px;
+$font_size_13: 13px;
+$font_size_14: 14px;
+$font_size_15: 15px;
+$font_size_16: 16px;
+$font_size_17: 17px;
+$font_size_18: 18px;
+$font_size_19: 19px;
+$font_size_20: 20px;
+
+.color_black {
+  color: #333;
+}
+.color_gray_deep {
+  color: #666;
+}
+.color_gray {
+  color: #acacac;
+}
+.default_color {
+  color: #f97755;
+}
+.margin_top8 {
+  margin-top: 0.8rem;
+}
+
+
+// 自定义label颜色
+
+.myLabel_color {
+  .van-icon-checked {
+    color: $price_color;
+  }
+}
+
+// 加载更多
+.no-more {
+  font-size: 1.3rem;
+  color: #acacac !important;
+  text-align: center;
+  line-height: 2rem;
+}
+.infinite-status-prompt {
+  font-size: 1.3rem;
+  color: #acacac !important;
+  text-align: center;
+  line-height: 2rem;
+}
+
+// 两行溢出
+.ellipsis_3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.ellipsis_2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.ellipsis_1 {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.container{
+  padding: 0 1.5rem;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+.teacher-img{
+  position: relative;
+  &:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    // z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../static/image/icon/tea.png") no-repeat;
+    background-size: 100% ;
+  }
+}
+
+.student-img{
+  position: relative;
+  &:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    // z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../static/image/icon/stud.png") no-repeat;
+    background-size: 100% ;
+  }
+}
+
+.whiteBg{
+  margin-top: 3rem;
+}

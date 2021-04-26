@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>index</title>
+    <style>
+        header{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+
+        }
+        .flex-con{
+          overflow: auto;
+          background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="flex-wrap flex-vertical" >
+        <header>
+          123123123
+        </header>
+        <div id="main" class="flex-con" >
+
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="./script/api.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.setStatusBarStyle({
+            style: 'dark',
+            color: 'rgba(221, 221, 221, 0)'
+        });
+
+        api.openWin({
+            name: 'winPageIndex',
+            url: 'html/winPageIndex/winPageIndex.html',
+            pageParam: {
+                name: 'test'
+            }
+        });
+    };
+</script>
